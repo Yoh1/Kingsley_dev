@@ -33,6 +33,10 @@ const navSlide = () => {
 }
 
 
+let controller = new ScrollMagic.Controller();
+let timeline =  new TimelineMax();
+
+timeline.to(".text",5,{x:500}).to('.content-images',2,{opacity:0},'-=2');
+
 navSlide();
 
-console.log(navSlide);
